@@ -1,0 +1,51 @@
+form {
+  width: 400px;
+}
+.form_inputs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+label {
+  display: flex;
+  justify-content: flex-start;
+  color: gray;
+  margin-bottom: 15px;
+  font-size: large;
+}
+span {
+  font-size: 12px;
+  padding: 3px;
+  color: red;
+  display: none; /*remove block from view*/
+}
+input:invalid[focus="true"] ~ span {
+  display: block; /*span visible*/
+}
+input:invalid[focus="true"] {
+  /*accessing var in css*/
+  border: 1px solid red;
+}
+input {
+  height: 50px;
+  font-size: large;
+  padding: 0 15px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  color: black;
+}
+h1 {
+  color: peru;
+  text-align: center;
+}
+button {
+  height: 50px;
+  width: 100%;
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: peru;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
